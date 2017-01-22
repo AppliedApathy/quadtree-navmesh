@@ -203,7 +203,7 @@ const demo = {
     const root = new Rect({x: 0, y: 0, w: this.maxX, h: this.maxY})
     root.contains = this.obstacles//[...this.obstacles]
     root.depth = 0
-    root.code = 0
+    root.code = ''+0
     this.navmesh = root.buildNavmesh(this.maxDepth)
     this.root = root
   },
